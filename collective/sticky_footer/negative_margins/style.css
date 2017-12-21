@@ -1,0 +1,29 @@
+/* This I did just to reset all of the margins and paddings to view correctly */
+* {
+    margin: 0;
+}
+
+/* This is to make the heigh of the html and body fill 100% of the page */
+html, body {
+    height: 100%;
+}
+
+/* This is just to seperate paragraphs to help see the distinction */
+body p {
+    margin: 10px;
+}
+
+/* This will set the wrapper div to fill the entire page and will create a blank margin-bottom px that will allow the footer to 
+sit without anything overlayed on top of it. Using the 100% this will let the footer sit at the bottom of the viewport if the 
+content is too short to fill it but will have it run off of the page if content is long enough to fill up to the margin-bottom 
+px from the bottom of the page.  */
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+/* This will set the height of footer. The push and footer heights will be the same in this instance. And this height will also
+need to match the margin-bottom of the .wrapper */
+.footer, .push {
+    height: 50px;
+}
